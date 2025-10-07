@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buat akun dulu cuy</title>
+</head>
+<body>
+    <h1>masukkan data pribadi anda(hehehe)</h1>
+    <form action="regis.html">
+
+        <fieldset>
+            <label for="Email">email</label><br>
+            <input type="email" name="email" id="email" placeholder="Masukin email lu" required>
+    <br><br>
+            <label for="Nama lengkap">Masukkan Username</label><br>
+            <input type="text" name="Nama Lengkap" id="Masukin nama"
+            required
+            pattern="[a-z][0-9]"
+            title="kobinasi angka dan huruf kecil"
+            >
+    <br><br>
+            <label for="password">konfirmasi password</label><br>
+            <input type="password" name="password" id="password" placeholder="masukkan sandi"
+            required
+            pattern="{8}"
+            title="8 Character"
+            >
+    <br><br>
+            <label for="password">password</label><br>
+            <input type="password" name="password" id="password" placeholder="konfirmasi sandi"
+            required
+            pattern="{8}"
+            title="8 Character"
+            >
+
+    <br><br>
+        <label for="tanggal lahir">tanggal lahir</label><br>
+        <input type="date" name="tl" id="tl">
+    <br><br>
+            <label for="Nomor">Nomor Telepon</label><br>
+            <input type="tel" name="Nomor" id="Masukkan Nomor Telepon" pattern="[0-9] {9,12}" title="9-12 angka">
+    <br><br>
+            <label>Jenis Kelamin</label><br>
+            <input type="radio" name="Kelamin" id="Laki-laki"><label for="Laki-laki">Laki-laki</label>
+            <input type="radio" name="Kelamin" id="wanita"><label for="wanita">wanita</label>
+    <br><br>
+            <label for="ASAL">ASAL</label><br>
+            <select name="ASAL" id="ASAL">
+                <option value="Jabodetabek">Jabodetabek</option>
+                <option value="Luar Jabodetabek">Luar Jabodetabek</option>
+            </select>
+    <br><br>
+            <label for="hobi">minat</label><br>
+            <input type="checkbox" name="hobi" id="hobi"><label for="hobi">membaca</label>
+            <input type="checkbox" name="hobi" id="hobi"><label for="hobi">teknologi</label>
+            <input type="checkbox" name="hobi" id="hobi"><label for="hobi">traveling</label>
+            <input type="checkbox" name="hobi" id="hobi"><label for="hobi">game</label>
+            <input type="checkbox" name="hobi" id="hobi"><label for="hobi">musik</label>
+            <input type="checkbox" name="hobi" id="hobi"><label for="hobi">nonton</label>
+            <input type="checkbox" name="hobi" id="hobi"><label for="hobi">seni</label>
+    <br><br>
+            <label for="tanggal lahir">tanggal lahir</label><br>
+            <input type="date" name="tl" id="tl">
+    <br><br>
+            <label for="rate">tingkat keahlian</label>
+            <select name="rate" id="rate">
+                <option value="Sepuh">Sepuh</option>
+                <option value="menengah">menengah</option>
+                <option value="pemula">pemula</option>
+            </select>
+    <br><br>
+            <label for="pp">Masukkan Pas Foto</label>
+            <input type="file" accept="image/*">
+        </fieldset>
+
+        <br><br>
+        <label for="ket">Keterangan</label><br>
+        <textarea name="ket" id="ket" cols="30" placeholder="Masukkan Biodata Singkat" rows="5"></textarea>
+        <br><br>
+        <input type="submit" value="Regis">
+    </form>
+    
+</body>
+</html>
